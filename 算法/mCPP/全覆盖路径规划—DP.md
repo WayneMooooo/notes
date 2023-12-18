@@ -23,14 +23,10 @@ CPP需解决的问题：
 > The spanning-tree coverage (STC) based CPP algorithm subdivides the workspace into a finite sequence of disjoint cells, either by cell decomposition-based method or grid-based method
 
 该算法采用了两种栅格,一种是边长为2倍机器人覆盖幅宽的“极大栅格”,而每个“极大栅格”又被等分成4个等大的、边长为覆盖幅宽的“极小栅格”,若“极大栅格”中包含障碍区域,那么此栅格将被整体视作障碍栅格。
-<div align=center>
-<img src="C:\Users\MoWeimin\Desktop\开题\STC_fenjie.png" style="zoom:40%;" />
-</div>
-<center>"极大栅格"和"极小栅格"的划分方法</center>
+![](vx_images/359313220249672.png)
+"极大栅格"和"极小栅格"的划分方法
 如下图所示，机器人处于当前栅格x，按逆时针方向扫描周边栅格，获取未经覆盖的“新栅格”，已被覆盖过的栅格称作“旧栅格”，当捕获到第一个新栅格时，连接当前栅格与新栅格的中心点。形成“生成树”的边，机器人沿着生成树的边进入新栅格。如此往复，当周边无新栅格时停止前向探索，此时机器人沿着已有生成树的边往回进行覆盖，沿途继续扫描周边栅格，若捕获“新栅格”，则继续生成边，直至完成覆盖。
-<div align=center>
-<img src="C:\Users\MoWeimin\Desktop\开题\STC_yuanli1.png" style="zoom:50%;" />
-</div>
+![](vx_images/91443320237539.png)
 <center>STC算法原理图</center>
 生成的覆盖路径最长为(n+m)D，其中n为地图生成的总栅格数，m为边界栅格(与地图边界至少共享一点)数，D为机器人覆盖幅宽。
 

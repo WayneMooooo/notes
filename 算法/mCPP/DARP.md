@@ -50,3 +50,37 @@ $$\begin{array}{c}
 \end{array}$$
 ### Iterative Equation
 $$E_{i}=\mathcal{C}_{i} \odot\left(m_{i} E_{i}\right)$$
+
+## Ideal-Shaped Spanning Tree 
+![](https://raw.githubusercontent.com/WayneMooooo/notes/main/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/mcpp/darp.md/354323614242205.png =879x)
+相同格数的区域存在不同的路径转弯数。
+算法通过不同子区域间相互交换节点来减少各子区域规划路径的转弯数。希望达到如下效果：
+$$\begin{array}{c}
+T_{i} \leq T_{i 0}, \quad \forall i \in 1, \ldots, r \\
+\min \sum_{i=1}^{n_{r}} T_{i}
+\end{array}
+$$
+算法分为两方面内容：确定可交换的节点、交换规则。
+
+### 可交换节点
+前提：各子区域已构造好各自的生成树（各区域的路径转弯次数已确定）。
+为了保证生成树的连通性，只有生成树的末端节点可被交换，分为以下三类：
+* I-shaped end node：存在两次转弯，当该点被舍弃，仍存在两次转弯。
+* L-shaped end node：存在四次转弯，当该点被舍弃时，转弯数减少两次。
+* T-shaped end node：存在四次转弯，当该点被舍弃时，该点处不存在转弯。
+
+![三种 end node](https://raw.githubusercontent.com/WayneMooooo/notes/main/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/mcpp/darp.md/41145614260085.png =614x)
+
+### 交换规则
+为了确保能够减少转弯次数，节点交换需满足如下原则：
+* 每次交换意味着一个子区域舍弃一个末端节点，另一个子区域接收此节点。
+* 在舍弃一个末端节点时，T形末端节点首选，L形次之。在接收节点时，优先生成I形末端节点，L形次之。以此规则交换节点，经过一轮循环后，若此轮交换后不能满足算法目的，则舍弃此轮交换进入新的一轮循环。
+* 每次循环遍历每个子区域中的每个可交换节点。
+* 当转弯次数不再下降或达到迭代次数时循环结束，输出最优路径。
+
+![](https://raw.githubusercontent.com/WayneMooooo/notes/main/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/mcpp/darp.md/1541715255191.png =668x)
+左164 右148
+
+### 算法流程
+![](https://raw.githubusercontent.com/WayneMooooo/notes/main/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/mcpp/darp.md/498571415257689.png =845x)
+
