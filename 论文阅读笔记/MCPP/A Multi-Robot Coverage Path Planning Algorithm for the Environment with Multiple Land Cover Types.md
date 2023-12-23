@@ -1,0 +1,3 @@
+# A Multi-Robot Coverage Path Planning Algorithm for the Environment with Multiple Land Cover Types
+## Motivation
+> **However, none of the existing studies has considered the complexity of the surface of the geographical environment in the task area. Especially in tasks, such as emergency search and rescue, the efficiency of robots or unmanned aerial vehicles is seriously affected by various surface features. Therefore, considering the impact of different land cover types in outdoor environmental conditions is of considerable importance.**
