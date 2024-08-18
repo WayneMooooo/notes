@@ -1,11 +1,14 @@
 # DARP
 ## Multi-Robot Coverage Path Planning
+
 ### 问题描述
+
 **地图区域描述**
+
 $\mathcal{U}=\{x,y:x\in[1,rows],y\in[1,cols]\}~~~~~~~~~~~~n=rows \times cols$
 **区域中障碍物(占据格数为$n_o$)描述**
 $B=\{(x,y)\in\mathcal{U}:(x,y)~is~occupied\}$
-**覆盖区域描述**
+ **覆盖区域描述**
 $\mathcal{L}=\mathcal{U}-B~~~~~~~~~~~~~~~~~~~~~$需要覆盖的格数$l=n-n_o$
 **定义1** ：单元格$(x_i, y_i)$与$(x_j,y_j)$相邻，若：
 $$||x_i-x_j||+||y_i-y_j||\leq 1$$
@@ -38,7 +41,9 @@ $$\begin{array}{l}
 * assignment matrix $A$，其构造如下：
 $$A_{x,y}=\underset{i\in\{1,\cdots,n_r\}}{\operatorname{argmin}}~E_{i|x,y},~\forall (x,y)\in\mathcal{L}$$
 该矩阵用于构造每个机器人的工作区域：
-$$L_i=\{(x,y)\in\mathcal{L}:A(x,y)=i\},~\forall i\in\{1,\cdots,n_r\}~~~~~k_i=|L_i|$$
+$$L_i=\{(x,y)\in\mathcal{L}:A(x,y)=i\},~\forall i\in\{1,\cdots,n_r\}~~~~~k_i=|L_i|$$single-robot coverage problem已经被研究得很好了，其中spanning tree coverage (STC)展现了更好的表现，不受制于机器人初始位置及障碍物分布。STC是一种cell-decomposition base method, 先计算 spanning tree of the cell graph，然后机器人circumnavigate the spanning tree。Figure 1 shows an example of STC。基于STC，several methods have been proposed to tackle the multi-robot coverage path planning problem. Hazon and Kaminka在[hazon]中首次提出了一种基于STC算法的名为MSTC的mCPP解决方案。该方法基于机器人的初始位置将整个STC路径拆分后分配给各个机器人，该算法可以有效应对robot failure。但是该方法很依赖于机器人的初始位置以及生成树的构造。为了改进均衡性能以提高覆盖效率，Zheng等人在[zheng]中提出了一种MFC的方法。该方法通过构造一个forest of trees with one tree for each robot提高了整体效率。该方法被证明是有效的即便是存在复杂障碍物并且计算复杂度仍是polynomial。为了追求在线效率，Senthilkumar和Bharadwaj[Senthilkumar]提出了一种同时构建生成树的在线式算法，其在没有先验知识的环境下仍然有效且能达到很高的覆盖率。Dong等人在提出了AWSTC的算法，as a suitable solution for multi-UAV area coverage in a distributed manner.[dong，Chleboun]。在AWSTC中，同时为各个机器人构建生成树，生成树的生长方向为the center of inertia of the uncovered area. 此外该作者还做了实物实验in a controlled environment, with no unexpected obstacles.recently，Kapoutsis等人首次提出了使用divide-area的算法来解决mCPP问题的方法名为DARP[Kapoutsis, Gao,Xin, Idir]，以追求一个最优coverage solution。该方法先将concerned area等分给各个机器人，各个机器人再在各自的区域里进行STC路径构造。DARP通过区域划分的方式，将mCPP问题reduces成了多个single-robot CPP问题。
+
+建立在上述works的视角上，目前的算法已经可以很好的求解mCPP问题对于已知的静态环境，而且解能兼顾均衡和效率。这些方法一般求出一个静态的均衡解，然而as aforementioned, 实际的运行情况中多机器人系统可能并不如想象的那么均衡，运行环境也可能导致个机器人之间的运行效率出现差异。我们的方法考虑到了这个问题，提出了一个对于这种不平衡问题的mCPP动态解决方案。
 ### Equally Divide the Space
 $E_i$的初值：$E_{i|x,y}=d(\chi_i(t_0),[x,y]^\tau),~\forall i\in{1,\cdots,n_r}$
 定义修正因子$m_i$：$E_i=m_iE_i$
