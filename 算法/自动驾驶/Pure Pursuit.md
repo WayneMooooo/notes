@@ -6,7 +6,7 @@
 
 基于当前车辆后轮中心点$A$的位置，在参考路径$path$上以预瞄距离$l_d$匹配一个预瞄点$C$，之后根据$A, C$ 的位置确定旋转中心$O$，以其确定的一个半径为$R~$的圆弧段作为后轮跟踪到点$C~$的路径，也就是一种定圆运动。为了实现跟踪点$C~$的定圆运动，需要保持车辆的转弯半径始终为R，由此进一步可以确定前轮转向角$\delta_f$。
 
-![](https://raw.githubusercontent.com/WayneMooooo/notes/main/学习笔记/算法/自动驾驶/pure%20pursuit.md/88701116259282.png =482x)
+![](https://raw.githubusercontent.com/WayneMooooo/notes/main/学习笔记/算法/自动驾驶/pure%20pursuit.md/416963816246524.png =482x)
 
 > 算法目标：为了得到一个关于控制量——前轮转角$\delta_f$的控制律
 
