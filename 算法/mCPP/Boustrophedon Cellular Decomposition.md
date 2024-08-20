@@ -17,16 +17,10 @@ decomposition: free configuration space ——> trapezoidal cells
 $event$:
 
 1. $IN$: old cell完成构建，两个new cell开始构建；
-
-![](https://raw.githubusercontent.com/WayneMooooo/notes/main/学习笔记/算法/mcpp/boustrophedon%20cellular%20decomposition.md/135660716259988.png =500x)
-
 2. $OUT$: 两个old cell完成构建，一个new cell开始构建；
-
-![](https://raw.githubusercontent.com/WayneMooooo/notes/main/学习笔记/算法/mcpp/boustrophedon%20cellular%20decomposition.md/37220916256543.png =500x)
 
 3. $MIDDLE$:在$IN$和$OUT$两个过程中，按顶点作为分界将cell分割。
 
-![](https://raw.githubusercontent.com/WayneMooooo/notes/main/学习笔记/算法/mcpp/boustrophedon%20cellular%20decomposition.md/136402016252297.png =500x)
 
 
 ## boustrophedon cellular decomposition
