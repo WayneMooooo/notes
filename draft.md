@@ -1,9 +1,19 @@
-```puml
-@startmindmap
-* Debian
-@endmindmap
-```
+# MCPP online planning
 
-``` puml
-VNote -> Markdown : Hi Markdown, I am VNote
+**算法整体架构如下：**
+
+![](https://raw.githubusercontent.com/WayneMooooo/notes/main/364510117240149.png)
+
+## Assignment 多机器人全覆盖任务分配
+
+* **Global_assign.py 全局任务分配及实时调整模块**
+    1. 扩散式地全局MCpp任务划分，由各个机器人的初始位置开始轮流扩散每个机器人的任务子区域，直至整个任务空间被划分完毕。
+    2. 实时更新各机器人的覆盖状态，并据此进行全局任务的微调。
+
+* **Assignment_asyn.py 规划窗口划分；指定机器人编号划分(异步式划分)**
+    对于单机器人子区域内规划窗口区域的划分。对于处于待规划状态的机器人，在其子区域划分出新的规划窗口。机器人在规划窗口内执行完指定量的覆盖任务后进入待规划状态。
+
+## Online_STC 基于滑动窗口的在线式STC
+**STC_dynamic_planner**
+    一种在线式的STC路径规划算法。引入规划窗口的概念，使得规划的可调整性增加，一方面可以更好地应对环境中动态障碍物，另一方面，使得在MCpp问题中，为被划入机器人规划窗口的区域可以在机器人之间进行交换，以达到任务执行更加均衡的目的。
 
