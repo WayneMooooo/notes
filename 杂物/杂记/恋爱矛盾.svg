@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- 由 Microsoft Visio, SVG Export 生成 恋爱矛盾.svg Page-1 -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"
+		xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="8.26772in" height="11.6929in"
+		viewBox="0 0 595.276 841.89" xml:space="preserve" color-interpolation-filters="sRGB" class="st11">
+	<v:documentProperties v:langID="2052" v:metric="true" v:viewMarkup="false">
+		<v:userDefs>
+			<v:ud v:nameU="msvNoAutoConnect" v:val="VT0(1):26"/>
+		</v:userDefs>
+	</v:documentProperties>
+
+	<style type="text/css">
+	<![CDATA[
+		.st1 {stroke:#d9958f;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st2 {fill:#000000;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st3 {fill:#000000;font-family:Times New Roman;font-size:3em;font-weight:bold}
+		.st4 {stroke:#ffffff;stroke-linecap:butt;stroke-width:3.12}
+		.st5 {fill:#fff2cc;font-family:楷体;font-size:0.833336em;font-weight:bold}
+		.st6 {fill:#ffffff;stroke:#ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
+		.st7 {fill:#d9958f;font-family:楷体;font-size:0.833336em;font-weight:bold}
+		.st8 {font-size:1em}
+		.st9 {stroke:#000000;stroke-linecap:butt;stroke-width:3.12}
+		.st10 {fill:#000000;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
+		.st11 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+	]]>
+	</style>
+
+	<g v:mID="0" v:index="1" v:groupContext="foregroundPage">
+		<title>页-1</title>
+		<v:pageProperties v:drawingScale="0.0393701" v:pageScale="0.0393701" v:drawingUnits="24" v:shadowOffsetX="8.50394"
+				v:shadowOffsetY="-8.50394"/>
+		<v:layer v:name="连接线" v:index="0"/>
+		<g id="group7-1" transform="translate(158.74,-487.559)" v:mID="7" v:groupContext="group">
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(17):26"/>
+				<v:ud v:nameU="visNavOrder" v:prompt="" v:val="VT0(0):26"/>
+			</v:userDefs>
+			<title>2 集合补集</title>
+			<g id="shape10-2" v:mID="10" v:groupContext="shape" transform="translate(113.386,0)">
+				<title>工作表.10</title>
+				<path d="M42.52 694.49 C81.66 694.49 113.39 727.48 113.39 768.19 C113.39 808.89 81.66 841.89 42.52 841.89 C26.57
+							 841.89 11.84 836.41 0 827.15 C17.21 813.71 28.35 792.3 28.35 768.19 C28.35 744.08 17.21 722.67 0 709.22
+							 C11.84 699.97 26.57 694.49 42.52 694.49" class="st1"/>
+			</g>
+			<g id="shape9-5" v:mID="9" v:groupContext="shape">
+				<title>工作表.9</title>
+				<path d="M85.04 768.19 C85.04 792.3 96.17 813.71 113.39 827.15 C101.54 836.41 86.82 841.89 70.87 841.89 C31.73 841.89
+							 0 808.89 0 768.19 C0 727.48 31.73 694.49 70.87 694.49 C86.82 694.49 101.54 699.97 113.39 709.22 C96.17
+							 722.67 85.04 744.08 85.04 768.19 Z" class="st2"/>
+			</g>
+			<g id="shape8-7" v:mID="8" v:groupContext="shape" transform="translate(85.04,-14.7365)">
+				<title>工作表.8</title>
+				<desc>?</desc>
+				<v:textBlock v:margins="rect(10,10,10,10)" v:tabSpace="42.5197"/>
+				<v:textRect cx="28.3462" cy="782.926" width="56.7" height="117.928"/>
+				<path d="M0 782.93 C0 758.81 11.13 737.41 28.35 723.96 C45.56 737.41 56.69 758.81 56.69 782.93 C56.69 807.04 45.56
+							 828.44 28.35 841.89 C11.13 828.44 0 807.04 0 782.93" class="st1"/>
+				<text x="19.35" y="793.73" class="st3" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>?</text>			</g>
+		</g>
+		<g id="shape11-11" v:mID="11" v:groupContext="shape" transform="translate(192.756,-588.614)">
+			<title>标题</title>
+			<desc>底色</desc>
+			<v:custProps>
+				<v:cp v:nameU="shapelook" v:lbl="" v:type="0" v:format="1;椭圆;2;云形;3;矩形;5;线条;6;徒手绘;7;波形" v:sortKey="" v:invis="true"
+						v:ask="false" v:langID="2052" v:cal="0" v:val="VT0(0):26"/>
+			</v:custProps>
+			<v:userDefs>
+				<v:ud v:nameU="solsh" v:val="VT15({1E3B3066-9E48-43AD-812D-67A2086F19C3}):41"/>
+				<v:ud v:nameU="shapetype" v:val="VT0(2):26"/>
+				<v:ud v:nameU="shapelook" v:prompt="1;椭圆;2;云形;3;矩形;5;线条;6;徒手绘;7;波形" v:val="VT0(5):26"/>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+				<v:ud v:nameU="OPRIndicator" v:val="VT0(0):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197" v:verticalAlign="2"/>
+			<v:textRect cx="23.811" cy="804.09" width="47.63" height="36"/>
+			<path d="M0 823.89 L47.62 823.89" class="st4"/>
+			<text x="13.77" y="819.09" class="st5" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>底色</text>		</g>
+		<g id="shape17-15" v:mID="17" v:groupContext="shape" transform="translate(306.142,-547.654)">
+			<title>正方形.17</title>
+			<desc>绚烂 瞬态 意外性质</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197" v:verticalAlign="2"/>
+			<v:textRect cx="20.9764" cy="820.913" width="41.96" height="41.9528"/>
+			<rect x="0" y="799.937" width="41.9528" height="41.9528" class="st6"/>
+			<text x="10.94" y="814.89" class="st7" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>绚烂<v:newlineChar/><tspan
+						x="10.94" dy="1.2em" class="st8">瞬态<v:newlineChar/></tspan><tspan x="0.9" dy="1.2em" class="st8">意外性质</tspan></text>		</g>
+		<g id="shape12-20" v:mID="12" v:groupContext="shape" transform="translate(300.472,-588.614)">
+			<title>标题.12</title>
+			<desc>爱欲</desc>
+			<v:custProps>
+				<v:cp v:nameU="shapelook" v:lbl="" v:type="0" v:format="1;椭圆;2;云形;3;矩形;5;线条;6;徒手绘;7;波形" v:sortKey="" v:invis="true"
+						v:ask="false" v:langID="2052" v:cal="0" v:val="VT0(0):26"/>
+			</v:custProps>
+			<v:userDefs>
+				<v:ud v:nameU="solsh" v:val="VT15({1E3B3066-9E48-43AD-812D-67A2086F19C3}):41"/>
+				<v:ud v:nameU="shapetype" v:val="VT0(2):26"/>
+				<v:ud v:nameU="shapelook" v:prompt="1;椭圆;2;云形;3;矩形;5;线条;6;徒手绘;7;波形" v:val="VT0(5):26"/>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+				<v:ud v:nameU="OPRIndicator" v:val="VT0(0):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197" v:verticalAlign="2"/>
+			<v:textRect cx="23.811" cy="804.09" width="47.63" height="36"/>
+			<path d="M0 823.89 L47.62 823.89" class="st9"/>
+			<text x="13.77" y="819.09" class="st7" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>爱欲</text>		</g>
+		<g id="shape16-24" v:mID="16" v:groupContext="shape" transform="translate(189.354,-547.087)">
+			<title>正方形</title>
+			<desc>枯燥 常态 实质上正常</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197" v:verticalAlign="2"/>
+			<v:textRect cx="25.5118" cy="816.378" width="51.03" height="51.0236"/>
+			<rect x="0" y="790.866" width="51.0236" height="51.0236" class="st10"/>
+			<text x="15.47" y="814.89" class="st5" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>枯燥<v:newlineChar/><tspan
+						x="15.47" dy="1.2em" class="st8">常态<v:newlineChar/></tspan><tspan x="0.41" dy="1.2em" class="st8">实质上正常</tspan></text>		</g>
+	</g>
+</svg>
